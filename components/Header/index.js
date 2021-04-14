@@ -32,6 +32,7 @@ const Header = () => {
             ref={searchInputRef}
             type='text'
             className=' flex-row w-full focus:outline-none'
+            defaultValue={router.query.term}
           />
           <svg
             onClick={() => (searchInputRef.current.value = '')}
